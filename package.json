@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0",
+  "name": "de.mbackschat.cordova.plugin.image2pdf",
+  "cordova_name": "Cordova Image to PDF converter",
+  "description": "Convert image to PDF",
+  "author": "Martin Backschat",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mbackschat/cordova-plugin-image2pdf.git.git"
+  },
+  "cordova" : {
+    "id": "de.mbackschat.cordova.plugin.image2pdf",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "image",
+    "pdf",
+    "converter",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.2.0"
+    }
+  ]
+}

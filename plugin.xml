@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License.
+-->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+        id="de.mbackschat.cordova.plugin.image2pdf" version="0.1.0">
+    <name>Image2PDF</name>
+    <description>Convert image to PDF</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,image,pdf,converter</keywords>
+    <author>Martin Backschat</author>
+    <repo>https://github.com/mbackschat/cordova-plugin-image2pdf.git.git</repo>
+
+
+    <js-module name="image2pdf" src="www/image2pdf.js">
+        <clobbers target="cordova.plugins.image2pdf" />
+        <clobbers target="plugin.image2pdf" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="Image2PDF">
+                <param name="ios-package" value="Image2PDF"/>
+            </feature>
+        </config-file>
+        <source-file src="src/ios/Image2PDF.m"/>
+        <header-file src="src/ios/Image2PDF.h"/>
+    </platform>
+</plugin>
